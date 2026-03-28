@@ -8,6 +8,7 @@ const jsQR = require('jsqr');
 const config = require('./bot_config');
 const db = require('./database');
 const twApi = require('@opecgame/twapi');
+const express = require('express');
 const app = express()
 const port = process.env.PORT || 4000 
 
