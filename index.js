@@ -8,6 +8,17 @@ const jsQR = require('jsqr');
 const config = require('./bot_config');
 const db = require('./database');
 const twApi = require('@opecgame/twapi');
+const app = express()
+const port = process.env.PORT || 4000 
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
+
 
 db.initDatabase();
 
